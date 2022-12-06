@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --timer: 1s;
+    --size: 80px;
+    --color:  #6366f1;
+}
+.load{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load-item{
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    border: 10px solid var(--color);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    animation: rotate var(--timer) infinite linear;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
