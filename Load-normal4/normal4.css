@@ -11,13 +11,10 @@
   --color: #0d9488;
 }
 .load {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 .load-item {
+  position: absolute;
   border-radius: 50%;
   border: var(--size) solid var(--color);
   animation: rotate 2.4s infinite cubic-bezier(0, 0.2, 0.8, 1);

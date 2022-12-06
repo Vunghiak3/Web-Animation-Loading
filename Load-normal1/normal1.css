@@ -11,12 +11,10 @@
     --color:  #6366f1;
 }
 .load{
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 .load-item{
+    position: absolute;
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
